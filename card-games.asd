@@ -5,9 +5,8 @@
   :author "tempate"
   :license  "GPLv3+"
   :version "0.0.1"
-  :serial t
   :components ((:module "src"
-                        serial :t
+                        :serial :t
                         :components ((:file "package")
                                      (:file "card-games")
                                      (:file "cards")
