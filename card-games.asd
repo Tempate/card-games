@@ -1,12 +1,14 @@
 ;;;; card-games.asd
 
 (asdf:defsystem #:card-games
-  :description "Describe card-games here"
-  :author "Your Name <your.name@example.com>"
-  :license  "Specify license here"
+  :description "A project to play several card games"
+  :author "tempate"
+  :license  "GPLv3+"
   :version "0.0.1"
   :serial t
   :components ((:file "package")
                (:file "card-games")
-               (:file "cards")
-               (:file "black-jack")))
+               (:module "src"
+                        serial :t
+                        :components ((:file "cards")
+                                     (:file "black-jack"))))
