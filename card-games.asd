@@ -6,9 +6,9 @@
   :license  "GPLv3+"
   :version "0.0.1"
   :serial t
-  :components ((:file "package")
-               (:file "card-games")
-               (:module "src"
+  :components ((:module "src"
                         serial :t
-                        :components ((:file "cards")
+                        :components ((:file "package")
+                                     (:file "card-games")
+                                     (:file "cards")
                                      (:file "black-jack"))))
